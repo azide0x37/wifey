@@ -1,4 +1,6 @@
 # wifey
-A totally opaque automatic financial management site. 
-Don't worry about your money.
+A totally opaque automatic financial management software. 
+
+Don't worry about money.
+
 Let wifey handle it. 

@@ -2,6 +2,8 @@
 wifey.py
 Class implementation of wifey module
 '''
+import requests
+from bs4 import BeautifulSoup
 
 class Wifey(Object):
     def __init__(self, accounts = [], username = '', password = '', pin = '0000'):

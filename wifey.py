@@ -7,4 +7,7 @@ class Wifey(Object):
     def __init__(self, accounts = [], username = '', password = '', pin = '0000'):
 
     def __str__(self):
-        return self.accounts[0]
+        try:
+            return self.accounts[0]
+        except ValueError as e:
+            return "Failure to resolve name."

@@ -1,5 +1,3 @@
-require("babel-register");
-require('./server.es6');
 import { repeat } from 'lodash'
 import chalk from 'chalk'
 import env from '@niftyco/env'

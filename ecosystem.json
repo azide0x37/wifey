@@ -2,7 +2,7 @@
   "apps": [
     {
       "name": "Wifey",
-      "script": "core/server.js",
+      "script": "core/babel_transformer.js",
       "exec_mode": "cluster",
       "instances": "max",
       "env_production": {

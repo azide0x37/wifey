@@ -17,7 +17,7 @@
       "ref": "origin/master",
       "repo": "git@github.com:azide0x37/wifey.git",
       "path": "/var/www/production",
-      "post-deploy": "sudo npm i && sudo pm2 startOrGracefulReload server.js",
+      "post-deploy": "sudo npm i && sudo pm2 startOrGracefulReload core/server.js",
       "forward-agent": "yes"
     }
   }

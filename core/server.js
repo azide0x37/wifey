@@ -1,3 +1,4 @@
+require("babel-register");
 import { repeat } from 'lodash'
 import chalk from 'chalk'
 import env from '@niftyco/env'

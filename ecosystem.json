@@ -1,0 +1,24 @@
+{
+  "apps": [
+    {
+      "name": "Wifey",
+      "script": "app.js",
+      "exec_mode": "cluster",
+      "instances": "max",
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ],
+  "deploy": {
+    "production": {
+      "user": "semaphoreci",
+      "host": "45.55.227.221",
+      "ref": "origin/master",
+      "repo": "git@github.com:azide0x37/wifey.git",
+      "path": "/var/www/production",
+      "post-deploy": "npm i && pm2 startOrGracefulReload ecosystem.json --env production",
+      "forward-agent": "yes"
+    }
+  }
+}

@@ -1,0 +1,1506 @@
+doctype html
+html
+  head
+    meta(http-equiv='content-type', content='text/html;charset=UTF-8')
+    meta(charset='utf-8')
+    title Pages - Admin Dashboard UI Kit - Blank Page
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no')
+    link(rel='apple-touch-icon', href='pages/ico/60.png')
+    link(rel='apple-touch-icon', sizes='76x76', href='pages/ico/76.png')
+    link(rel='apple-touch-icon', sizes='120x120', href='pages/ico/120.png')
+    link(rel='apple-touch-icon', sizes='152x152', href='pages/ico/152.png')
+    link(rel='icon', type='image/x-icon', href='favicon.ico')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-touch-fullscreen', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='default')
+    meta(content='', name='description')
+    meta(content='', name='author')
+    link(href='assets/plugins/pace/pace-theme-flash.css', rel='stylesheet', type='text/css')
+    link(href='assets/plugins/boostrapv3/css/bootstrap.min.css', rel='stylesheet', type='text/css')
+    link(href='assets/plugins/font-awesome/css/font-awesome.css', rel='stylesheet', type='text/css')
+    link(href='assets/plugins/jquery-scrollbar/jquery.scrollbar.css', rel='stylesheet', type='text/css', media='screen')
+    link(href='assets/plugins/bootstrap-select2/select2.css', rel='stylesheet', type='text/css', media='screen')
+    link(href='assets/plugins/switchery/css/switchery.min.css', rel='stylesheet', type='text/css', media='screen')
+    link(href='pages/css/pages-icons.css', rel='stylesheet', type='text/css')
+    link.main-stylesheet(href='pages/css/pages.css', rel='stylesheet', type='text/css')
+    //if lte IE 9
+      link(href='assets/plugins/codrops-dialogFx/dialog.ie.css', rel='stylesheet', type='text/css', media='screen')
+  body.fixed-header
+    // BEGIN SIDEBPANEL
+    nav.page-sidebar(data-pages='sidebar')
+      // BEGIN SIDEBAR MENU TOP TRAY CONTENT
+      #appMenu.sidebar-overlay-slide.from-top
+        .row
+          .col-xs-6.no-padding
+            a.p-l-40(href='#')
+              img(src='assets/img/demo/social_app.svg', alt='socail')
+          .col-xs-6.no-padding
+            a.p-l-10(href='#')
+              img(src='assets/img/demo/email_app.svg', alt='socail')
+        .row
+          .col-xs-6.m-t-20.no-padding
+            a.p-l-40(href='#')
+              img(src='assets/img/demo/calendar_app.svg', alt='socail')
+          .col-xs-6.m-t-20.no-padding
+            a.p-l-10(href='#')
+              img(src='assets/img/demo/add_more.svg', alt='socail')
+      // END SIDEBAR MENU TOP TRAY CONTENT
+      // BEGIN SIDEBAR MENU HEADER
+      .sidebar-header
+        img.brand(src='assets/img/logo_white.png', alt='logo', data-src='assets/img/logo_white.png', data-src-retina='assets/img/logo_white_2x.png', width='78', height='22')
+        .sidebar-header-controls
+          button.btn.btn-xs.sidebar-slide-toggle.btn-link.m-l-20(type='button', data-pages-toggle='#appMenu')
+            i.fa.fa-angle-down.fs-16
+          button.btn.btn-link.visible-lg-inline(type='button', data-toggle-pin='sidebar')
+            i.fa.fs-12
+      // END SIDEBAR MENU HEADER
+      // START SIDEBAR MENU
+      .sidebar-menu
+        // BEGIN SIDEBAR MENU ITEMS
+        ul.menu-items
+          li.m-t-30
+            a.detailed(href='index.html')
+              span.title Dashboard
+              span.details 12 New Updates
+            span.bg-success.icon-thumbnail
+              i.pg-home
+          li
+            a.detailed(href='http://pages.revox.io/dashboard/latest/html/widget.html')
+              span.title Widgets
+              span.details 22 items
+            span.icon-thumbnail W
+          li
+            a.detailed(href='email.html')
+              span.title Email
+              span.details 234 New Emails
+            span.icon-thumbnail
+              i.pg-mail
+          li
+            a(href='social.html')
+              span.title Social
+            span.icon-thumbnail
+              i.pg-social
+          li
+            a(href='javascript:;')
+              span.title Calendar
+              span.arrow
+            span.icon-thumbnail
+              i.pg-calender
+            ul.sub-menu
+              li
+                a(href='calendar.html') Basic
+                span.icon-thumbnail c
+              li
+                a(href='calendar_lang.html') Languages
+                span.icon-thumbnail L
+              li
+                a(href='calendar_month.html') Month
+                span.icon-thumbnail M
+              li
+                a(href='calendar_lazy.html') Lazy load
+                span.icon-thumbnail La
+              li
+                a(href='http://pages.revox.io/dashboard/2.1.0/doc/#calendar', target='_blank') Documentation
+                span.icon-thumbnail D
+          li
+            a(href='builder.html')
+              span.title Builder
+            span.icon-thumbnail
+              i.pg-layouts
+          li
+            a(href='javascript:;')
+              span.title Layouts
+              span.arrow
+            span.icon-thumbnail
+              i.pg-layouts2
+            ul.sub-menu
+              li
+                a(href='default_layout.html') Default
+                span.icon-thumbnail dl
+              li
+                a(href='secondary_layout.html') Secondary
+                span.icon-thumbnail sl
+              li
+                a(href='boxed_layout.html') Boxed
+                span.icon-thumbnail bl
+              li
+                a(href='sidemenu_and_horizontal_menu.html') Horizontal Menu
+                span.icon-thumbnail hm
+              li
+                a(href='rtl_layout.html') RTL
+                span.icon-thumbnail rl
+              li
+                a(href='builder.html#tabContent') Columns
+                span.icon-thumbnail cl
+          li
+            a(href='javascript:;')
+              span.title UI Elements
+              span.arrow
+            span.icon-thumbnail Ui
+            ul.sub-menu
+              li
+                a(href='color.html') Color
+                span.icon-thumbnail c
+              li
+                a(href='typography.html') Typography
+                span.icon-thumbnail t
+              li
+                a(href='icons.html') Icons
+                span.icon-thumbnail i
+              li
+                a(href='buttons.html') Buttons
+                span.icon-thumbnail b
+              li
+                a(href='notifications.html') Notifications
+                span.icon-thumbnail n
+              li
+                a(href='modals.html') Modals
+                span.icon-thumbnail m
+              li
+                a(href='progress.html') Progress & Activity
+                span.icon-thumbnail pa
+              li
+                a(href='tabs_accordian.html') Tabs & Accordions
+                span.icon-thumbnail ta
+              li
+                a(href='sliders.html') Sliders
+                span.icon-thumbnail s
+              li
+                a(href='tree_view.html') Tree View
+                span.icon-thumbnail tv
+              li
+                a(href='nestables.html') Nestable
+                span.icon-thumbnail ns
+          li
+            a(href='javascript:;')
+              span.title Forms
+              span.arrow
+            span.icon-thumbnail
+              i.pg-form
+            ul.sub-menu
+              li
+                a(href='form_elements.html') Form Elements
+                span.icon-thumbnail fe
+              li
+                a(href='form_layouts.html') Form Layouts
+                span.icon-thumbnail fl
+              li
+                a(href='form_wizard.html') Form Wizard
+                span.icon-thumbnail fw
+          li
+            a(href='portlets.html')
+              span.title Portlets
+            span.icon-thumbnail
+              i.pg-grid
+          li
+            a(href='views.html')
+              span.title Views
+            span.icon-thumbnail
+              i.pg.pg-ui
+          li
+            a(href='javascript:;')
+              span.title Tables
+              span.arrow
+            span.icon-thumbnail
+              i.pg-tables
+            ul.sub-menu
+              li
+                a(href='tables.html') Basic Tables
+                span.icon-thumbnail bt
+              li
+                a(href='datatables.html') Data Tables
+                span.icon-thumbnail dt
+          li
+            a(href='javascript:;')
+              span.title Maps
+              span.arrow
+            span.icon-thumbnail
+              i.pg-map
+            ul.sub-menu
+              li
+                a(href='google_map.html') Google Maps
+                span.icon-thumbnail gm
+              li
+                a(href='vector_map.html') Vector Maps
+                span.icon-thumbnail vm
+          li
+            a(href='charts.html')
+              span.title Charts
+            span.icon-thumbnail
+              i.pg-charts
+          li
+            a(href='javascript:;')
+              span.title Extra
+              span.arrow
+            span.icon-thumbnail
+              i.pg-bag
+            ul.sub-menu
+              li
+                a(href='invoice.html') Invoice
+                span.icon-thumbnail in
+              li
+                a(href='404.html') 404 Page
+                span.icon-thumbnail pg
+              li
+                a(href='500.html') 500 Page
+                span.icon-thumbnail pg
+              li.active
+                a(href='blank_template.html') Blank Page
+                span.icon-thumbnail bp
+              li
+                a(href='login.html') Login
+                span.icon-thumbnail l
+              li
+                a(href='register.html') Register
+                span.icon-thumbnail re
+              li
+                a(href='lock_screen.html') Lockscreen
+                span.icon-thumbnail ls
+              li
+                a(href='gallery.html') Gallery
+                span.icon-thumbnail gl
+              li
+                a(href='timeline.html') Timeline
+                span.icon-thumbnail t
+          li
+            a(href='javascript:;')
+              span.title Menu Levels
+              span.arrow
+            span.icon-thumbnail
+              i.pg-menu_lv
+            ul.sub-menu
+              li
+                a(href='javascript:;') Level 1
+                span.icon-thumbnail L1
+              li
+                a(href='javascript:;')
+                  span.title Level 2
+                  span.arrow
+                span.icon-thumbnail L2
+                ul.sub-menu
+                  li
+                    a(href='javascript:;') Sub Menu
+                    span.icon-thumbnail Sm
+                  li
+                    a(href='ujavascript:;') Sub Menu
+                    span.icon-thumbnail Sm
+        .clearfix
+      // END SIDEBAR MENU
+    // END SIDEBAR
+    // END SIDEBPANEL
+    // START PAGE-CONTAINER
+    .page-container
+      // START HEADER
+      .header
+        // START MOBILE CONTROLS
+        .container-fluid.relative
+          // LEFT SIDE
+          .pull-left.full-height.visible-sm.visible-xs
+            // START ACTION BAR
+            .header-inner
+              a.btn-link.toggle-sidebar.visible-sm-inline-block.visible-xs-inline-block.padding-5(href='#', data-toggle='sidebar')
+                span.icon-set.menu-hambuger
+            // END ACTION BAR
+          .pull-center.hidden-md.hidden-lg
+            .header-inner
+              .brand.inline
+                img(src='assets/img/logo.png', alt='logo', data-src='assets/img/logo.png', data-src-retina='assets/img/logo_2x.png', width='78', height='22')
+          // RIGHT SIDE
+          .pull-right.full-height.visible-sm.visible-xs
+            // START ACTION BAR
+            .header-inner
+              a.btn-link.visible-sm-inline-block.visible-xs-inline-block(href='#', data-toggle='quickview', data-toggle-element='#quickview')
+                span.icon-set.menu-hambuger-plus
+            // END ACTION BAR
+        // END MOBILE CONTROLS
+        .pull-left.sm-table.hidden-xs.hidden-sm
+          .header-inner
+            .brand.inline
+              img(src='assets/img/logo.png', alt='logo', data-src='assets/img/logo.png', data-src-retina='assets/img/logo_2x.png', width='78', height='22')
+            // START NOTIFICATION LIST
+            ul.notification-list.no-margin.hidden-sm.hidden-xs.b-grey.b-l.b-r.no-style.p-l-30.p-r-20
+              li.p-r-15.inline
+                .dropdown
+                  a#notification-center.icon-set.globe-fill(href='javascript:;', data-toggle='dropdown')
+                    span.bubble
+                  // START Notification Dropdown
+                  .dropdown-menu.notification-toggle(role='menu', aria-labelledby='notification-center')
+                    // START Notification
+                    .notification-panel
+                      // START Notification Body
+                      .notification-body.scrollable
+                        // START Notification Item
+                        .notification-item.unread.clearfix
+                          // START Notification Item
+                          .heading.open
+                            a.text-complete.pull-left(href='#')
+                              i.pg-map.fs-16.m-r-10
+                              span.bold Carrot Design
+                              span.fs-12.m-l-10 David Nester
+                            .pull-right
+                              .thumbnail-wrapper.d16.circular.inline.m-t-15.m-r-10.toggle-more-details
+                                div
+                                  i.fa.fa-angle-left
+                              span.time few sec ago
+                            .more-details
+                              .more-details-inner
+                                h5.semi-bold.fs-16
+                                  | “Apple’s Motivation - Innovation 
+                                  br
+                                  |                                                             distinguishes between 
+                                  br
+                                  |                                                             A leader and a follower.”
+                                p.small.hint-text
+                                  | Commented on john Smiths wall.
+                                  br
+                                  |  via pages framework.
+                          // END Notification Item
+                          // START Notification Item Right Side
+                          .option(data-toggle='tooltip', data-placement='left', title='mark as read')
+                            a.mark(href='#')
+                          // END Notification Item Right Side
+                        // START Notification Body
+                        // START Notification Item
+                        .notification-item.clearfix
+                          .heading
+                            a.text-danger.pull-left(href='#')
+                              i.fa.fa-exclamation-triangle.m-r-10
+                              span.bold 98% Server Load
+                              span.fs-12.m-l-10 Take Action
+                            span.pull-right.time 2 mins ago
+                          // START Notification Item Right Side
+                          .option
+                            a.mark(href='#')
+                          // END Notification Item Right Side
+                        // END Notification Item
+                        // START Notification Item
+                        .notification-item.clearfix
+                          .heading
+                            a.text-warning-dark.pull-left(href='#')
+                              i.fa.fa-exclamation-triangle.m-r-10
+                              span.bold Warning Notification
+                              span.fs-12.m-l-10 Buy Now
+                            span.pull-right.time yesterday
+                          // START Notification Item Right Side
+                          .option
+                            a.mark(href='#')
+                          // END Notification Item Right Side
+                        // END Notification Item
+                        // START Notification Item
+                        .notification-item.unread.clearfix
+                          .heading
+                            .thumbnail-wrapper.d24.circular.b-white.m-r-5.b-a.b-white.m-t-10.m-r-10
+                              img(width='30', height='30', data-src-retina='assets/img/profiles/1x.jpg', data-src='assets/img/profiles/1.jpg', alt='', src='assets/img/profiles/1.jpg')
+                            a.text-complete.pull-left(href='#')
+                              span.bold Revox Design Labs
+                              span.fs-12.m-l-10 Owners
+                            span.pull-right.time 11:00pm
+                          // START Notification Item Right Side
+                          .option(data-toggle='tooltip', data-placement='left', title='mark as read')
+                            a.mark(href='#')
+                          // END Notification Item Right Side
+                        // END Notification Item
+                      // END Notification Body
+                      // START Notification Footer
+                      .notification-footer.text-center
+                        a(href='#') Read all notifications
+                        a.portlet-refresh.text-black.pull-right(data-toggle='refresh', href='#')
+                          i.pg-refresh_new
+                      // START Notification Footer
+                    // END Notification
+                  // END Notification Dropdown
+              li.p-r-15.inline
+                a.icon-set.clip(href='#')
+              li.p-r-15.inline
+                a.icon-set.grid-box(href='#')
+            // END NOTIFICATIONS LIST
+            a.search-link(href='#', data-toggle='search')
+              i.pg-search
+              | Type anywhere to 
+              span.bold search
+        .pull-right
+          .header-inner
+            a.btn-link.icon-set.menu-hambuger-plus.m-l-20.sm-no-margin.hidden-sm.hidden-xs(href='#', data-toggle='quickview', data-toggle-element='#quickview')
+        .pull-right
+          // START User Info
+          .visible-lg.visible-md.m-t-10
+            .pull-left.p-r-10.p-t-10.fs-16.font-heading
+              span.semi-bold Alex
+              span.text-master Templeton
+            .dropdown.pull-right
+              button.profile-dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                span.thumbnail-wrapper.d32.circular.inline.m-t-5
+                  img(src='assets/img/profiles/avatar.jpg', alt='', data-src='assets/img/profiles/avatar.jpg', data-src-retina='assets/img/profiles/avatar_small2x.jpg', width='32', height='32')
+              ul.dropdown-menu.profile-dropdown(role='menu')
+                li
+                  a(href='#')
+                    i.pg-settings_small
+                    |  Settings
+                li
+                  a(href='#')
+                    i.pg-outdent
+                    |  Feedback
+                li
+                  a(href='#')
+                    i.pg-signals
+                    |  Help
+                li.bg-master-lighter
+                  a.clearfix(href='#')
+                    span.pull-left Logout
+                    span.pull-right
+                      i.pg-power
+          // END User Info
+      // END HEADER
+      // START PAGE CONTENT WRAPPER
+      .page-content-wrapper
+        // START PAGE CONTENT
+        .content
+          #modalFillIn.modal.fade.fill-in(tabindex='-1', role='dialog', aria-hidden='true')
+            button.close(type='button', data-dismiss='modal', aria-hidden='true')
+              i.pg-close
+            .modal-dialog
+              .modal-content
+                .modal-header
+                  h5.text-left.p-b-5
+                    span.semi-bold Manual Transaction \\
+                    |  enter required details below...
+                .modal-body
+                  .row
+                    .col-md-12
+                      input#appTime.form-control.input-sm(type='text', placeholder='Time', name='icon-filter')
+                      input#appDate.form-control.input-sm(type='text', placeholder='Date', name='icon-filter')
+                      input#appDescription.form-control.input-lg(type='text', placeholder='Description', name='icon-filter')
+                      input#appAmount.form-control.input-md(type='text', placeholder='Amount', name='icon-filter')
+                      input#appBalance.form-control.input-sm(type='text', placeholder='Balance', name='icon-filter')
+                    .col-md-3.no-padding.sm-m-t-10.sm-text-center
+                      button#add-app.btn.btn-primary.btn-lg.btn-large.fs-15(type='button', data-target='#modalFillIn', data-toggle='modal') Add
+                  p.text-right.sm-text-center.hinted-text.p-t-10.p-r-10 What is it? Terms and conditions
+                .modal-footer
+              // /.modal-content
+            // /.modal-dialog
+          // START JUMBOTRON
+          .jumbotron(data-pages='parallax')
+            .container-fluid.container-fixed-lg.sm-p-l-20.sm-p-r-20
+              .inner
+                // START BREADCRUMB
+                ul.breadcrumb
+                  li
+                    p Budget
+                  li
+                    a.active(href='#') Alex's Basic Budget
+                // END BREADCRUMB
+          // END JUMBOTRON
+          // START CONTAINER FLUID
+          .container-fluid.container-fixed-lg
+            // BEGIN PlACE PAGE CONTENT HERE
+            // START Budget Table
+            .panel.panel-transparent
+              .panel-heading
+                .panel-title
+                  | Personal Budget || June 2016
+                .pull-right
+                  .col-xs-12
+                    input#search-table.form-control(type='text', placeholder='Search')
+                    button#btnFillSizeToggler.btn.btn-success(data-target='#modalFillIn', data-toggle='modal')
+                      i.fa.fa-plus
+                      |  Add New Item
+                    button#show-modal.btn.btn-danger.btn-cons
+                      i.fa.fa-minus
+                      |  Remove Item
+                .clearfix
+              .panel-body
+                table#BudgetDataTable.table.table-hover.table-striped
+                  thead
+                    tr
+                      th Time
+                      th Date
+                      th Description
+                      th Amount
+                      th Balance
+                  tbody
+                    tr
+                      td.v-align-middle
+                        p 10:00 GMT
+                      td.v-align-middle
+                        p 27-Aug-16
+                      td.v-align-middle
+                        p Fucksticks (pkg of 100)
+                      td.v-align-middle
+                        p $69.69
+                      td.v-align-middle
+                        p $6969.69
+            // END Budget Table
+            // END PLACE PAGE CONTENT HERE
+          // END CONTAINER FLUID
+        // END PAGE CONTENT
+        // START COPYRIGHT
+        // START CONTAINER FLUID
+        // START CONTAINER FLUID
+        .container-fluid.container-fixed-lg.footer
+          .copyright.sm-text-center
+            p.small.no-margin.pull-left.sm-pull-reset
+              span.hint-text Copyright © 2016 
+              span.font-montserrat Alex Templeton
+              span.hint-text All rights reserved. 
+              span.sm-block
+                a.m-l-10.m-r-10(href='#') Terms of use
+                |  
+                a.m-l-10(href='#') Privacy Policy
+            p.small.no-margin.pull-right.sm-pull-reset
+              a(href='#') Hand-crafted
+              span.hint-text & Made with Love ®
+            .clearfix
+        // END COPYRIGHT
+      // END PAGE CONTENT WRAPPER
+    // END PAGE CONTAINER
+    // START QUICKVIEW
+    #quickview.quickview-wrapper(data-pages='quickview')
+      // Nav tabs
+      ul.nav.nav-tabs
+        li
+          a(href='#quickview-notes', data-toggle='tab') Notes
+        li
+          a(href='#quickview-alerts', data-toggle='tab') Alerts
+        li.active
+          a(href='#quickview-chat', data-toggle='tab') Chat
+      a.btn-link.quickview-toggle(data-toggle-element='#quickview', data-toggle='quickview')
+        i.pg-close
+      // Tab panes
+      .tab-content
+        // BEGIN Notes !
+        #quickview-notes.tab-pane.fade.in.no-padding
+          #note-views.view-port.clearfix.quickview-notes
+            // BEGIN Note List !
+            #quick-note-list.view.list
+              .toolbar.clearfix
+                ul.pull-right
+                  li
+                    a.delete-note-link(href='#')
+                      i.fa.fa-trash-o
+                  li
+                    a.new-note-link(href='#', data-navigate='view', data-view-port='#note-views', data-view-animation='push')
+                      i.fa.fa-plus
+                button.btn-remove-notes.btn.btn-xs.btn-block.hide
+                  i.fa.fa-times
+                  |  Delete
+              ul
+                // BEGIN Note Item !
+                li(data-noteid='1')
+                  .left
+                    // BEGIN Note Action !
+                    .checkbox.check-warning.no-margin
+                      input#qncheckbox1(type='checkbox', value='1')
+                      label(for='qncheckbox1')
+                    // END Note Action !
+                    // BEGIN Note Preview Text !
+                    p.note-preview
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    // BEGIN Note Preview Text !
+                  // BEGIN Note Details !
+                  .right.pull-right
+                    // BEGIN Note Date !
+                    span.date 12/12/14
+                    a(href='#', data-navigate='view', data-view-port='#note-views', data-view-animation='push')
+                      i.fa.fa-chevron-right
+                    // END Note Date !
+                  // END Note Details !
+                // END Note List !
+                // BEGIN Note Item !
+                li(data-noteid='2')
+                  .left
+                    // BEGIN Note Action !
+                    .checkbox.check-warning.no-margin
+                      input#qncheckbox2(type='checkbox', value='1')
+                      label(for='qncheckbox2')
+                    // END Note Action !
+                    // BEGIN Note Preview Text !
+                    p.note-preview
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    // BEGIN Note Preview Text !
+                  // BEGIN Note Details !
+                  .right.pull-right
+                    // BEGIN Note Date !
+                    span.date 12/12/14
+                    a(href='#')
+                      i.fa.fa-chevron-right
+                    // END Note Date !
+                  // END Note Details !
+                // END Note List !
+                // BEGIN Note Item !
+                li(data-noteid='2')
+                  .left
+                    // BEGIN Note Action !
+                    .checkbox.check-warning.no-margin
+                      input#qncheckbox3(type='checkbox', value='1')
+                      label(for='qncheckbox3')
+                    // END Note Action !
+                    // BEGIN Note Preview Text !
+                    p.note-preview
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    // BEGIN Note Preview Text !
+                  // BEGIN Note Details !
+                  .right.pull-right
+                    // BEGIN Note Date !
+                    span.date 12/12/14
+                    a(href='#')
+                      i.fa.fa-chevron-right
+                    // END Note Date !
+                  // END Note Details !
+                // END Note List !
+                // BEGIN Note Item !
+                li(data-noteid='3')
+                  .left
+                    // BEGIN Note Action !
+                    .checkbox.check-warning.no-margin
+                      input#qncheckbox4(type='checkbox', value='1')
+                      label(for='qncheckbox4')
+                    // END Note Action !
+                    // BEGIN Note Preview Text !
+                    p.note-preview
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    // BEGIN Note Preview Text !
+                  // BEGIN Note Details !
+                  .right.pull-right
+                    // BEGIN Note Date !
+                    span.date 12/12/14
+                    a(href='#')
+                      i.fa.fa-chevron-right
+                    // END Note Date !
+                  // END Note Details !
+                // END Note List !
+                // BEGIN Note Item !
+                li(data-noteid='4')
+                  .left
+                    // BEGIN Note Action !
+                    .checkbox.check-warning.no-margin
+                      input#qncheckbox5(type='checkbox', value='1')
+                      label(for='qncheckbox5')
+                    // END Note Action !
+                    // BEGIN Note Preview Text !
+                    p.note-preview
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    // BEGIN Note Preview Text !
+                  // BEGIN Note Details !
+                  .right.pull-right
+                    // BEGIN Note Date !
+                    span.date 12/12/14
+                    a(href='#')
+                      i.fa.fa-chevron-right
+                    // END Note Date !
+                  // END Note Details !
+                // END Note List !
+            // END Note List !
+            #quick-note.view.note
+              div
+                ul.toolbar
+                  li
+                    a.close-note-link(href='#')
+                      i.pg-arrow_left
+                  li
+                    a(href='#', data-action='Bold')
+                      i.fa.fa-bold
+                  li
+                    a(href='#', data-action='Italic')
+                      i.fa.fa-italic
+                  li
+                    a(href='#')
+                      i.fa.fa-link
+                .body
+                  div
+                    .top
+                      span 21st april 2014 2:13am
+                    .content
+                      // Modal
+                      .quick-note-editor.full-width.full-height.js-input(contenteditable='true')
+        // END Notes !
+        // BEGIN Alerts !
+        #quickview-alerts.tab-pane.fade.no-padding
+          #alerts.view-port.clearfix
+            // BEGIN Alerts View !
+            .view.bg-white
+              // BEGIN View Header !
+              .navbar.navbar-default.navbar-sm
+                .navbar-inner
+                  // BEGIN Header Controler !
+                  a.inline.action.p-l-10.link.text-master(href='javascript:;', data-navigate='view', data-view-port='#chat', data-view-animation='push-parrallax')
+                    i.pg-more
+                  // END Header Controler !
+                  .view-heading
+                    | Notications
+                  // BEGIN Header Controler !
+                  a.inline.action.p-r-10.pull-right.link.text-master(href='#')
+                    i.pg-search
+                  // END Header Controler !
+              // END View Header !
+              // BEGIN Alert List !
+              .list-view.boreded.no-top-border(data-init-list-view='ioslist')
+                // BEGIN List Group !
+                .list-view-group-container
+                  // BEGIN List Group Header!
+                  .list-view-group-header.text-uppercase
+                    | Calendar
+                  // END List Group Header!
+                  ul
+                    // BEGIN List Group Item!
+                    li.alert-list
+                      // BEGIN Alert Item Set Animation using data-view-animation !
+                      a(href='javascript:;', data-navigate='view', data-view-port='#chat', data-view-animation='push-parrallax')
+                        p.col-xs-height.col-middle
+                          span.text-warning.fs-10
+                            i.fa.fa-circle
+                        p.p-l-10.col-xs-height.col-middle.col-xs-9.overflow-ellipsis.fs-12
+                          span.text-master David Nester Birthday
+                        p.p-r-10.col-xs-height.col-middle.fs-12.text-right
+                          span.text-warning
+                            | Today 
+                            br
+                          span.text-master All Day
+                      // END Alert Item!
+                      // BEGIN List Group Item!
+                    // END List Group Item!
+                    // BEGIN List Group Item!
+                    li.alert-list
+                      // BEGIN Alert Item Set Animation using data-view-animation !
+                      a(href='#', data-navigate='view', data-view-port='#chat', data-view-animation='push-parrallax')
+                        p.col-xs-height.col-middle
+                          span.text-warning.fs-10
+                            i.fa.fa-circle
+                        p.p-l-10.col-xs-height.col-middle.col-xs-9.overflow-ellipsis.fs-12
+                          span.text-master Meeting at 2:30
+                        p.p-r-10.col-xs-height.col-middle.fs-12.text-right
+                          span.text-warning Today
+                      // END Alert Item!
+                    // END List Group Item!
+                // END List Group !
+                .list-view-group-container
+                  // BEGIN List Group Header!
+                  .list-view-group-header.text-uppercase
+                    | Social
+                  // END List Group Header!
+                  ul
+                    // BEGIN List Group Item!
+                    li.alert-list
+                      // BEGIN Alert Item Set Animation using data-view-animation !
+                      a.p-t-10.p-b-10(href='javascript:;', data-navigate='view', data-view-port='#chat', data-view-animation='push-parrallax')
+                        p.col-xs-height.col-middle
+                          span.text-complete.fs-10
+                            i.fa.fa-circle
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12.overflow-ellipsis.fs-12
+                          span.text-master.link
+                            | Jame Smith commented on your status
+                            br
+                          span.text-master “Perfection Simplified - Company Revox"
+                      // END Alert Item!
+                    // END List Group Item!
+                    // BEGIN List Group Item!
+                    li.alert-list
+                      // BEGIN Alert Item Set Animation using data-view-animation !
+                      a.p-t-10.p-b-10(href='javascript:;', data-navigate='view', data-view-port='#chat', data-view-animation='push-parrallax')
+                        p.col-xs-height.col-middle
+                          span.text-complete.fs-10
+                            i.fa.fa-circle
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12.overflow-ellipsis.fs-12
+                          span.text-master.link
+                            | Jame Smith commented on your status
+                            br
+                          span.text-master “Perfection Simplified - Company Revox"
+                      // END Alert Item!
+                    // END List Group Item!
+                .list-view-group-container
+                  // BEGIN List Group Header!
+                  .list-view-group-header.text-uppercase
+                    | Sever Status
+                  // END List Group Header!
+                  ul
+                    // BEGIN List Group Item!
+                    li.alert-list
+                      // BEGIN Alert Item Set Animation using data-view-animation !
+                      a.p-t-10.p-b-10(href='#', data-navigate='view', data-view-port='#chat', data-view-animation='push-parrallax')
+                        p.col-xs-height.col-middle
+                          span.text-danger.fs-10
+                            i.fa.fa-circle
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12.overflow-ellipsis.fs-12
+                          span.text-master.link
+                            | 12:13AM GTM, 10230, ID:WR174s
+                            br
+                          span.text-master Server Load Exceeted. Take action
+                      // END Alert Item!
+                    // END List Group Item!
+              // END Alert List !
+            // EEND Alerts View !
+        // END Alerts !
+        #quickview-chat.tab-pane.fade.in.active.no-padding
+          #chat.view-port.clearfix
+            .view.bg-white
+              // BEGIN View Header !
+              .navbar.navbar-default
+                .navbar-inner
+                  // BEGIN Header Controler !
+                  a.inline.action.p-l-10.link.text-master(href='javascript:;', data-navigate='view', data-view-port='#chat', data-view-animation='push-parrallax')
+                    i.pg-plus
+                  // END Header Controler !
+                  .view-heading
+                    | Chat List
+                    .fs-11 Show All
+                  // BEGIN Header Controler !
+                  a.inline.action.p-r-10.pull-right.link.text-master(href='#')
+                    i.pg-more
+                  // END Header Controler !
+              // END View Header !
+              .list-view.boreded.no-top-border(data-init-list-view='ioslist')
+                .list-view-group-container
+                  .list-view-group-header.text-uppercase
+                    | a
+                  ul
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/1x.jpg', data-src='assets/img/profiles/1.jpg', src='assets/img/profiles/1x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master ava flores
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                .list-view-group-container
+                  .list-view-group-header.text-uppercase b
+                  ul
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/2x.jpg', data-src='assets/img/profiles/2.jpg', src='assets/img/profiles/2x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master bella mccoy
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/3x.jpg', data-src='assets/img/profiles/3.jpg', src='assets/img/profiles/3x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master bob stephens
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                .list-view-group-container
+                  .list-view-group-header.text-uppercase c
+                  ul
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/4x.jpg', data-src='assets/img/profiles/4.jpg', src='assets/img/profiles/4x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master carole roberts
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/5x.jpg', data-src='assets/img/profiles/5.jpg', src='assets/img/profiles/5x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master christopher perez
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                .list-view-group-container
+                  .list-view-group-header.text-uppercase d
+                  ul
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/6x.jpg', data-src='assets/img/profiles/6.jpg', src='assets/img/profiles/6x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master danielle fletcher
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/7x.jpg', data-src='assets/img/profiles/7.jpg', src='assets/img/profiles/7x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master david sutton
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                .list-view-group-container
+                  .list-view-group-header.text-uppercase e
+                  ul
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/8x.jpg', data-src='assets/img/profiles/8.jpg', src='assets/img/profiles/8x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master earl hamilton
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/9x.jpg', data-src='assets/img/profiles/9.jpg', src='assets/img/profiles/9x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master elaine lawrence
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/1x.jpg', data-src='assets/img/profiles/1.jpg', src='assets/img/profiles/1x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master ellen grant
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/2x.jpg', data-src='assets/img/profiles/2.jpg', src='assets/img/profiles/2x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master erik taylor
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/3x.jpg', data-src='assets/img/profiles/3.jpg', src='assets/img/profiles/3x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master everett wagner
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                .list-view-group-container
+                  .list-view-group-header.text-uppercase f
+                  ul
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/4x.jpg', data-src='assets/img/profiles/4.jpg', src='assets/img/profiles/4x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master freddie gomez
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                .list-view-group-container
+                  .list-view-group-header.text-uppercase g
+                  ul
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/5x.jpg', data-src='assets/img/profiles/5.jpg', src='assets/img/profiles/5x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master glen jensen
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/6x.jpg', data-src='assets/img/profiles/6.jpg', src='assets/img/profiles/6x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master gwendolyn walker
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                .list-view-group-container
+                  .list-view-group-header.text-uppercase j
+                  ul
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/7x.jpg', data-src='assets/img/profiles/7.jpg', src='assets/img/profiles/7x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master janet romero
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                .list-view-group-container
+                  .list-view-group-header.text-uppercase k
+                  ul
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/8x.jpg', data-src='assets/img/profiles/8.jpg', src='assets/img/profiles/8x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master kim martinez
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                .list-view-group-container
+                  .list-view-group-header.text-uppercase l
+                  ul
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/9x.jpg', data-src='assets/img/profiles/9.jpg', src='assets/img/profiles/9x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master lawrence white
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/1x.jpg', data-src='assets/img/profiles/1.jpg', src='assets/img/profiles/1x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master leroy bell
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/2x.jpg', data-src='assets/img/profiles/2.jpg', src='assets/img/profiles/2x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master letitia carr
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/3x.jpg', data-src='assets/img/profiles/3.jpg', src='assets/img/profiles/3x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master lucy castro
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                .list-view-group-container
+                  .list-view-group-header.text-uppercase m
+                  ul
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/4x.jpg', data-src='assets/img/profiles/4.jpg', src='assets/img/profiles/4x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master mae hayes
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/5x.jpg', data-src='assets/img/profiles/5.jpg', src='assets/img/profiles/5x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master marilyn owens
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/6x.jpg', data-src='assets/img/profiles/6.jpg', src='assets/img/profiles/6x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master marlene cole
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/7x.jpg', data-src='assets/img/profiles/7.jpg', src='assets/img/profiles/7x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master marsha warren
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/8x.jpg', data-src='assets/img/profiles/8.jpg', src='assets/img/profiles/8x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master marsha dean
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/9x.jpg', data-src='assets/img/profiles/9.jpg', src='assets/img/profiles/9x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master mia diaz
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                .list-view-group-container
+                  .list-view-group-header.text-uppercase n
+                  ul
+                    // BEGIN Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/1x.jpg', data-src='assets/img/profiles/1.jpg', src='assets/img/profiles/1x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master noah elliott
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                .list-view-group-container
+                  .list-view-group-header.text-uppercase p
+                  ul
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/2x.jpg', data-src='assets/img/profiles/2.jpg', src='assets/img/profiles/2x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master phyllis hamilton
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                .list-view-group-container
+                  .list-view-group-header.text-uppercase r
+                  ul
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/3x.jpg', data-src='assets/img/profiles/3.jpg', src='assets/img/profiles/3x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master raul rodriquez
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/4x.jpg', data-src='assets/img/profiles/4.jpg', src='assets/img/profiles/4x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master rhonda barnett
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/5x.jpg', data-src='assets/img/profiles/5.jpg', src='assets/img/profiles/5x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master roberta king
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                .list-view-group-container
+                  .list-view-group-header.text-uppercase s
+                  ul
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/6x.jpg', data-src='assets/img/profiles/6.jpg', src='assets/img/profiles/6x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master scott armstrong
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/7x.jpg', data-src='assets/img/profiles/7.jpg', src='assets/img/profiles/7x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master sebastian austin
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/8x.jpg', data-src='assets/img/profiles/8.jpg', src='assets/img/profiles/8x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master sofia davis
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                .list-view-group-container
+                  .list-view-group-header.text-uppercase t
+                  ul
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/9x.jpg', data-src='assets/img/profiles/9.jpg', src='assets/img/profiles/9x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master terrance young
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/1x.jpg', data-src='assets/img/profiles/1.jpg', src='assets/img/profiles/1x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master theodore woods
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/2x.jpg', data-src='assets/img/profiles/2.jpg', src='assets/img/profiles/2x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master todd wood
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/3x.jpg', data-src='assets/img/profiles/3.jpg', src='assets/img/profiles/3x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master tommy jenkins
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+                .list-view-group-container
+                  .list-view-group-header.text-uppercase w
+                  ul
+                    // BEGIN Chat User List Item  !
+                    li.chat-user-list.clearfix
+                      a(data-view-animation='push-parrallax', data-view-port='#chat', data-navigate='view', href='#')
+                        span.col-xs-height.col-middle
+                          span.thumbnail-wrapper.d32.circular.bg-success
+                            img.col-top(width='34', height='34', alt='', data-src-retina='assets/img/profiles/4x.jpg', data-src='assets/img/profiles/4.jpg', src='assets/img/profiles/4x.jpg')
+                        p.p-l-10.col-xs-height.col-middle.col-xs-12
+                          span.text-master wilma hicks
+                          span.block.text-master.hint-text.fs-12 Hello there
+                    // END Chat User List Item  !
+            // BEGIN Conversation View  !
+            .view.chat-view.bg-white.clearfix
+              // BEGIN Header  !
+              .navbar.navbar-default
+                .navbar-inner
+                  a.link.text-master.inline.action.p-l-10.p-r-10(href='javascript:;', data-navigate='view', data-view-port='#chat', data-view-animation='push-parrallax')
+                    i.pg-arrow_left
+                  .view-heading
+                    | John Smith
+                    .fs-11.hint-text Online
+                  a.link.text-master.inline.action.p-r-10.pull-right(href='#')
+                    i.pg-more
+              // END Header  !
+              // BEGIN Conversation  !
+              #my-conversation.chat-inner
+                // BEGIN From Me Message  !
+                .message.clearfix
+                  .chat-bubble.from-me
+                    | Hello there
+                // END From Me Message  !
+                // BEGIN From Them Message  !
+                .message.clearfix
+                  .profile-img-wrapper.m-t-5.inline
+                    img.col-top(width='30', height='30', src='assets/img/profiles/avatar_small.jpg', alt='', data-src='assets/img/profiles/avatar_small.jpg', data-src-retina='assets/img/profiles/avatar_small2x.jpg')
+                  .chat-bubble.from-them
+                    | Hey
+                // END From Them Message  !
+                // BEGIN From Me Message  !
+                .message.clearfix
+                  .chat-bubble.from-me
+                    | Did you check out Pages framework ?
+                // END From Me Message  !
+                // BEGIN From Me Message  !
+                .message.clearfix
+                  .chat-bubble.from-me
+                    | Its an awesome chat
+                // END From Me Message  !
+                // BEGIN From Them Message  !
+                .message.clearfix
+                  .profile-img-wrapper.m-t-5.inline
+                    img.col-top(width='30', height='30', src='assets/img/profiles/avatar_small.jpg', alt='', data-src='assets/img/profiles/avatar_small.jpg', data-src-retina='assets/img/profiles/avatar_small2x.jpg')
+                  .chat-bubble.from-them
+                    | Yea
+                // END From Them Message  !
+              // BEGIN Conversation  !
+              // BEGIN Chat Input  !
+              .b-t.b-grey.bg-white.clearfix.p-l-10.p-r-10
+                .row
+                  .col-xs-1.p-t-15
+                    a.link.text-master(href='#')
+                      i.fa.fa-plus-circle
+                  .col-xs-8.no-padding
+                    input.form-control.chat-input(type='text', data-chat-input='', data-chat-conversation='#my-conversation', placeholder='Say something')
+                  .col-xs-2.link.text-master.m-l-10.m-t-15.p-l-10.b-l.b-grey.col-top
+                    a.link.text-master(href='#')
+                      i.pg-camera
+              // END Chat Input  !
+            // END Conversation View  !
+    // END QUICKVIEW
+    // START OVERLAY
+    .overlay.hide(data-pages='search')
+      // BEGIN Overlay Content !
+      .overlay-content.has-results.m-t-20
+        // BEGIN Overlay Header !
+        .container-fluid
+          // BEGIN Overlay Logo !
+          img.overlay-brand(src='assets/img/logo.png', alt='logo', data-src='assets/img/logo.png', data-src-retina='assets/img/logo_2x.png', width='78', height='22')
+          // END Overlay Logo !
+          // BEGIN Overlay Close !
+          a.close-icon-light.overlay-close.text-black.fs-16(href='#')
+            i.pg-close
+          // END Overlay Close !
+        // END Overlay Header !
+        .container-fluid
+          // BEGIN Overlay Controls !
+          input#overlay-search.no-border.overlay-search.bg-transparent(placeholder='Search...', autocomplete='off', spellcheck='false')
+          br
+          .inline-block
+            .checkbox.right
+              input#checkboxn(type='checkbox', value='1', checked='checked')
+              label(for='checkboxn')
+                i.fa.fa-search
+                |  Search within page
+          .inline-block.m-l-10
+            p.fs-13 Press enter to search
+          // END Overlay Controls !
+        // BEGIN Overlay Search Results, This part is for demo purpose, you can add anything you like !
+        .container-fluid
+          span
+            strong suggestions :
+          span#overlay-suggestions
+          br
+          .search-results.m-t-40
+            p.bold Pages Search Results
+            .row
+              .col-md-6
+                // BEGIN Search Result Item !
+                div
+                  // BEGIN Search Result Item Thumbnail !
+                  .thumbnail-wrapper.d48.circular.bg-success.text-white.inline.m-t-10
+                    div
+                      img(width='50', height='50', src='assets/img/profiles/avatar.jpg', data-src='assets/img/profiles/avatar.jpg', data-src-retina='assets/img/profiles/avatar2x.jpg', alt='')
+                  // END Search Result Item Thumbnail !
+                  .p-l-10.inline.p-t-5
+                    h5.m-b-5
+                      span.semi-bold.result-name ice cream
+                      |  on pages
+                    p.hint-text via john smith
+                // END Search Result Item !
+                // BEGIN Search Result Item !
+                div
+                  // BEGIN Search Result Item Thumbnail !
+                  .thumbnail-wrapper.d48.circular.bg-success.text-white.inline.m-t-10
+                    div T
+                  // END Search Result Item Thumbnail !
+                  .p-l-10.inline.p-t-5
+                    h5.m-b-5
+                      span.semi-bold.result-name ice cream
+                      |  related topics
+                    p.hint-text via pages
+                // END Search Result Item !
+                // BEGIN Search Result Item !
+                div
+                  // BEGIN Search Result Item Thumbnail !
+                  .thumbnail-wrapper.d48.circular.bg-success.text-white.inline.m-t-10
+                    div
+                      i.fa.fa-headphones.large-text
+                  // END Search Result Item Thumbnail !
+                  .p-l-10.inline.p-t-5
+                    h5.m-b-5
+                      span.semi-bold.result-name ice cream
+                      |  music
+                    p.hint-text via pagesmix
+                // END Search Result Item !
+              .col-md-6
+                // BEGIN Search Result Item !
+                div
+                  // BEGIN Search Result Item Thumbnail !
+                  .thumbnail-wrapper.d48.circular.bg-info.text-white.inline.m-t-10
+                    div
+                      i.fa.fa-facebook.large-text
+                  // END Search Result Item Thumbnail !
+                  .p-l-10.inline.p-t-5
+                    h5.m-b-5
+                      span.semi-bold.result-name ice cream
+                      |  on facebook
+                    p.hint-text via facebook
+                // END Search Result Item !
+                // BEGIN Search Result Item !
+                div
+                  // BEGIN Search Result Item Thumbnail !
+                  .thumbnail-wrapper.d48.circular.bg-complete.text-white.inline.m-t-10
+                    div
+                      i.fa.fa-twitter.large-text
+                  // END Search Result Item Thumbnail !
+                  .p-l-10.inline.p-t-5
+                    h5.m-b-5
+                      | Tweats on
+                      span.semi-bold.result-name  ice cream
+                    p.hint-text via twitter
+                // END Search Result Item !
+                // BEGIN Search Result Item !
+                div
+                  // BEGIN Search Result Item Thumbnail !
+                  .thumbnail-wrapper.d48.circular.text-white.bg-danger.inline.m-t-10
+                    div
+                      i.fa.fa-google-plus.large-text
+                  // END Search Result Item Thumbnail !
+                  .p-l-10.inline.p-t-5
+                    h5.m-b-5
+                      | Circles on
+                      span.semi-bold.result-name  ice cream
+                    p.hint-text via google plus
+                // END Search Result Item !
+        // END Overlay Search Results !
+      // END Overlay Content !
+    // END OVERLAY
+    // BEGIN VENDOR JS
+    script(src='assets/plugins/pace/pace.min.js', type='text/javascript')
+    script(src='assets/plugins/jquery/jquery-1.11.1.min.js', type='text/javascript')
+    script(src='assets/plugins/modernizr.custom.js', type='text/javascript')
+    script(src='assets/plugins/jquery-ui/jquery-ui.min.js', type='text/javascript')
+    script(src='assets/plugins/boostrapv3/js/bootstrap.min.js', type='text/javascript')
+    script(src='assets/plugins/jquery/jquery-easy.js', type='text/javascript')
+    script(src='assets/plugins/jquery-unveil/jquery.unveil.min.js', type='text/javascript')
+    script(src='assets/plugins/jquery-bez/jquery.bez.min.js')
+    script(src='assets/plugins/jquery-ios-list/jquery.ioslist.min.js', type='text/javascript')
+    script(src='assets/plugins/jquery-actual/jquery.actual.min.js')
+    script(src='assets/plugins/jquery-scrollbar/jquery.scrollbar.min.js')
+    script(type='text/javascript', src='assets/plugins/bootstrap-select2/select2.min.js')
+    script(type='text/javascript', src='assets/plugins/classie/classie.js')
+    script(src='assets/plugins/switchery/js/switchery.min.js', type='text/javascript')
+    script(src='assets/plugins/jquery-datatable/media/js/jquery.dataTables.min.js', type='text/javascript')
+    // END VENDOR JS
+    // BEGIN CORE TEMPLATE JS
+    script(src='pages/js/pages.min.js')
+    // END CORE TEMPLATE JS
+    // BEGIN PAGE LEVEL JS
+    script(src='assets/js/scripts.js', type='text/javascript')
+    // END PAGE LEVEL JS
+    // BEGIN Local JS
+    script(src='assets/js/dome.js', type='text/javascript')
+    // END Local JS

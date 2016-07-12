@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+// ============================ TEMPORARY FIX ==========================
+// == This is because gulp 3.x uses graceful-fs 3.x which throws a    ==
+// == deprecation warning: https://github.com/gulpjs/gulp/issues/1571 ==
+// == We do this to stop it from mucking up our output.               ==
+// == Once we incorporate Gulp 4.x into Vulcan this will be removed.  ==
+// =====================================================================
+process.noDeprecation = true                                       // ==
+// =====================================================================
+
+require('babel-core/register')()
+require('app-module-path').addPath(require('path').resolve(__dirname))
+require('core/cli')

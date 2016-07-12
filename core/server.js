@@ -1,7 +1,7 @@
 import { repeat } from 'lodash'
 import chalk from 'chalk'
 import env from '@niftyco/env'
-import config from 'core/config'
+import config from './config.js'
 import { logo } from 'core/vulcan'
 import { db } from 'core/bookshelf'
 import app from 'core/app'

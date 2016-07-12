@@ -2,7 +2,7 @@
   "apps": [
     {
       "name": "Wifey",
-      "script": "app.js",
+      "script": "core/app.js",
       "exec_mode": "cluster",
       "instances": "max",
       "env_production": {

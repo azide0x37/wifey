@@ -14,6 +14,6 @@ export const options = [{
   description: "don't show the banner"
 }]
 
-const callback = env.get('node_env', 'development') === 'development' ? () => gulp.start('index') : () => {}
+const callback = env.get('node_env', 'production') === 'production' ? () => gulp.start('index') : () => {}
 
 export const action = () => ({ port, banner }) => server(port, banner, callback)

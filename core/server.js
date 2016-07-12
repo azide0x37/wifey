@@ -13,7 +13,7 @@ export default (port, banner, cb = () => {}) => {
       console.log(logo)
       console.log(`  ${repeat('-', 80)}\n`)
     }
-    console.log(`  Started ${chalk.gray(config.get('app.name', 'your app'))} in ${chalk.cyan(env.get('node_env', 'development'))} mode at ${chalk.yellow(process.cwd())}`)
+    console.log(`  Started ${chalk.gray(config.get('app.name', 'your app'))} in ${chalk.cyan(env.get('node_env', 'production'))} mode at ${chalk.yellow(process.cwd())}`)
     console.log(`  You can view it by going to ${chalk.blue(`http://localhost:${port}`)} in your browser.`)
     console.log(`  Press ${chalk.cyan('<CTRL> + <C>')} at any time to shut down Vulcan server.\n`)
 

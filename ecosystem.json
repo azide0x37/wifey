@@ -2,7 +2,7 @@
   "apps": [
     {
       "name": "Wifey",
-      "script": "core/app.js",
+      "script": "core/server.js",
       "exec_mode": "cluster",
       "instances": "max",
       "env_production": {
@@ -17,7 +17,7 @@
       "ref": "origin/master",
       "repo": "git@github.com:azide0x37/wifey.git",
       "path": "/var/www/production",
-      "post-deploy": "sudo npm i && sudo pm2 startOrGracefulReload ecosystem.json --env production && sudo vulcan start",
+      "post-deploy": "sudo npm i && sudo pm2 startOrGracefulReload ecosystem.json --env production",
       "forward-agent": "yes"
     }
   }

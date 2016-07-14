@@ -1,14 +1,6 @@
 <div align="center">
-  <img src="http://i.imgur.com/oYGzAXZ.png">
-  <br><br>
   <a href='https://semaphoreci.com/azide/wifey'> <img src='https://semaphoreci.com/api/v1/azide/wifey/branches/master/shields_badge.svg' alt='Build Status'></a>
 </div>
-
-## Install
-```sh
-$ npm install --global @vulcan/cli
-$ vulcan make my-app
-```
 
 ## Intro
 **Vulcan** Is a boilerplate framework built on [Koa][koa] utilizing [Bookshelf][bookshelf] ORM and [Knex][knex] for database management and migrations. We built this framework to give us a quick base to start building our applications on.
@@ -51,23 +43,6 @@ Vulcan models are nothing special, just basic [Bookshelf][bookshelf] models. Onl
 For view rendering, we are using [Koa Views][koa-views] module defaulting to [Jade][jade] as our preferred template syntax but you can change that by installing it manually and changing the mappings in `app/config/app.js` under the `views` property.
 
 Our `app/controllers/welcome.js` controller shows how to render views.
-
-## Services
-We're working on a few services to default ship with Vulcan, right now we've got a Mailer service that is added to all your controllers using a middlware step to define `this.mailer`.
-
-### ‣ Mailer
-The Mailer service utilizes [Nodemailer][nodemailer] under the hood with some custom transports by us, such as the file and console mailer. You can configure the mailer in `app/config/mail.js`
-
-#### Console Transport
-The Console Transport returns the response of the mailer back when you `yield` it so you can do checks on it. This does not send any mail.
-
-### File Transport
-The File Transport directs the final email into `storage/emails.log` for you to inspect. This is great to test your emails.
-
-## Vulcan CLI
-To help with mundane tasks like creating database migrations, seeds, and generating boilerplate. We've included the `vulcan` command line file. This can be invoked by running `node vulcan` inside your application directory. By not supplying a sub command, the default help output is sent. You can see a list of all commands that are available and even dive into them with the `--help` flag.
-
-The CLI also loads custom commands that you can define by creating the command inside your `app/commands/` folder. By default we ship a example command called `greet` available at `app/commands/greet.js` so you can see how to create a command.
 
 [koa]: http://koajs.com
 [bookshelf]: http://bookshelfjs.org

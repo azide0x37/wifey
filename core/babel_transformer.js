@@ -1,2 +1,2 @@
 require("babel-register");
-require('commands/start.js');
+require('./commands/start.js');

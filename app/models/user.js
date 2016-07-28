@@ -1,7 +1,7 @@
 import Promise from 'bluebird'
-import { compare, hash } from 'bcrypt'
+import { hash } from 'bcrypt'
 import joi from 'joi'
-import { Model } from 'core/bookshelf'
+import { Model } from '@vulcan/core'
 
 export default Model.extend({
   tableName: 'users',

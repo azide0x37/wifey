@@ -19,20 +19,20 @@ export function * create () {
 }
 
 export function * show () {
-  const user = yield User.find(this.params.id)
+  const user = yield User.find(parseInt(this.params.userId, 10))
 
   return yield this.send({ user })
 }
 
 export function * update () {
-  const user = yield User.find(this.params.id)
+  const user = yield User.find(parseInt(this.params.userId, 10))
   yield user.save(this.request.body, { patch: true })
 
   return yield this.send({ user })
 }
 
 export function * destroy () {
-  const user = yield User.find(this.params.id)
+  const user = yield User.find(parseInt(this.params.userId, 10))
   yield user.destroy()
 
   return yield this.send({}, 204)

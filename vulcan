@@ -9,6 +9,6 @@
 process.noDeprecation = true                                       // ==
 // =====================================================================
 
-require('babel-core/register')()
+require('babel-core/register')({ ignore: /node_modules\/(?!@vulcan\/core)/ })
 require('app-module-path').addPath(require('path').resolve(__dirname))
-require('core/cli')
+require('@vulcan/core/cli')

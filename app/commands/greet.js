@@ -5,9 +5,8 @@ export const options = [{
   description: 'how to greet someone'
 }]
 
-export const action = (done) => (name = 'World', { greeting = 'Hello' }) => {
+export const action = (name = 'World', { greeting = 'Hello' }) => {
   console.log(`
     > ${greeting} ${name}!
   `)
-  done()
 }

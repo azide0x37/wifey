@@ -1,4 +1,4 @@
-import { EnhanceYourCalmError } from 'core/errors'
+import { EnhanceYourCalmError } from '@vulcan/core'
 
 const db = {}
 
